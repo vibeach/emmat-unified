@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#E8D4E0" />
+<title>EMMAT · Body Cream — Anti-Age</title>
+<meta name="description" content="EMMAT Anti-Age Body Cream, 200 ml. Rich daily care, inspired by facial skincare: a rich body cream with shea butter, niacinamide, sodium hyaluronate, allantoin and Matrixyl® synthe'6." />
+
+<meta property="og:title" content="EMMAT · Body Cream — Anti-Age" />
+<meta property="og:description" content="Rich daily care, inspired by facial skincare." />
+<meta property="og:image" content="assets/img/thesis-body-product.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="product.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E8D4E0'/%3E%3Crect x='14' y='5' width='4' height='6' fill='%23C9A24E'/%3E%3Crect x='10' y='11' width='12' height='17' rx='2' fill='%23DDCDE3' stroke='%238B6E2C' stroke-width='1.2'/%3E%3C/svg%3E" />
+</head>
+<body class="theme-body">
+
+<!-- ===================================================== LOADER -->
+<div id="loader" class="loader" aria-hidden="true">
+  <svg class="loader-cstl" viewBox="0 0 600 240">
+    <g class="ldr-lines" stroke="rgba(201,162,78,.7)" stroke-width="1.4" fill="none">
+      <path d="M60,170 C170,60 300,40 380,110 S520,190 550,90" />
+    </g>
+    <g class="ldr-stars" fill="#C9A24E">
+      <circle cx="60" cy="170" r="3.6"/>
+      <circle cx="215" cy="72" r="3.6"/>
+      <circle cx="380" cy="110" r="3.6"/>
+      <circle cx="486" cy="158" r="3.6"/>
+      <circle cx="550" cy="90" r="3.6"/>
+    </g>
+  </svg>
+  <div class="loader-mark">
+    <span>EMMAT</span>
+    <em>BODY CREAM</em>
+  </div>
+</div>
+
+<canvas id="dust" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"><span></span></div>
+<div id="progress" aria-hidden="true"><i></i></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="EMMAT — back to the home page">
+      <span class="brand-mark">EMMAT</span>
+      <span class="brand-sub">BODY CREAM</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#manifesto">The idea</a>
+      <a href="#prodotto">The Product</a>
+      <a href="#texture">Texture</a>
+      <a href="#composizione">Formula</a>
+      <a href="#rituale">How to use</a>
+      <a href="#packaging">Packaging</a>
+      <a href="#galleria">Gallery</a>
+    </nav>
+    <div class="nav-dd">
+      <button type="button" class="nav-dd-btn" aria-expanded="false" aria-haspopup="true" aria-controls="productsMenu">Products
+        <svg viewBox="0 0 10 10" aria-hidden="true"><polyline points="1.5 3.5 5 7 8.5 3.5"></polyline></svg>
+      </button>
+      <ul class="nav-dd-menu" id="productsMenu">
+        <li><a href="bb-cream.html">BB CREAM ANTI-POLLUTION</a></li>
+        <li><a href="milky-toner.html">MILKY TONER</a></li>
+        <li><a href="body-cream.html" aria-current="page">ANTI-AGE BODY CREAM</a></li>
+      </ul>
+    </div>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================= HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-video" src="assets/img/thesis-body-product.jpg" alt="EMMAT Anti-Age Body Cream: the 200 ml iridescent pink-lilac bottle with its gold pump, beside its embossed box with the É logo, on a marble surface" />
+  <div class="hero-veil"></div>
+
+  <div class="hero-copy">
+    <p class="hero-eyebrow"><span class="dot"></span> Anti-Age Body Cream · 200 ml</p>
+    <h1 id="hero-title" class="hero-title">
+      <span class="line"><span class="char-wrap">Rich daily</span></span>
+      <span class="line italic"><span class="char-wrap">care</span></span>
+    </h1>
+    <p class="hero-lede">…inspired by facial skincare.<br/>A rich body cream with <em>shea butter</em>, <em>niacinamide</em>, <em>sodium hyaluronate</em>, <em>allantoin</em> and <em>Matrixyl® synthe'6</em>.</p>
+    <div class="hero-actions">
+      <a href="#prodotto" class="cta cta-gold magnetic">Discover the product<span class="cta-arrow">→</span></a>
+      <a href="#composizione" class="cta cta-ghost">How the formula works</a>
+    </div>
+  </div>
+
+  <a href="#manifesto" class="hero-scroll" aria-label="Scroll">
+    <span></span>
+    <em>scroll</em>
+  </a>
+</section>
+
+<!-- ===================================================== MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Rich daily care</span><span class="dot">✦</span>
+    <span>Inspired by facial skincare</span><span class="dot">✦</span>
+    <span>Shea butter</span><span class="dot">✦</span>
+    <span>Niacinamide</span><span class="dot">✦</span>
+    <span>Sodium hyaluronate</span><span class="dot">✦</span>
+    <span>Allantoin</span><span class="dot">✦</span>
+    <span>Matrixyl® synthe'6</span><span class="dot">✦</span>
+    <span>200 ml pump bottle</span><span class="dot">✦</span>
+    <span>Rich daily care</span><span class="dot">✦</span>
+    <span>Inspired by facial skincare</span><span class="dot">✦</span>
+    <span>Shea butter</span><span class="dot">✦</span>
+    <span>Niacinamide</span><span class="dot">✦</span>
+    <span>Sodium hyaluronate</span><span class="dot">✦</span>
+    <span>Allantoin</span><span class="dot">✦</span>
+    <span>Matrixyl® synthe'6</span><span class="dot">✦</span>
+    <span>200 ml pump bottle</span><span class="dot">✦</span>
+  </div>
+</section>
+
+<!-- ======================================================= MANIFESTO -->
+<section id="manifesto" class="manifesto">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">— the idea</p>
+      <h2 class="display">
+        Rich daily care,<br/>
+        <span class="italic">inspired by facial skincare</span>
+      </h2>
+
+      <div class="vo">
+        <p>A rich body cream designed to combine <em>lasting emollient comfort</em> with ingredients commonly used in <em>facial skincare</em>.</p>
+        <p><strong>Shea butter</strong> and a varied lipid blend are paired with <strong>niacinamide</strong>, <strong>sodium hyaluronate</strong>, <strong>allantoin</strong> and <strong>Matrixyl® synthe'6</strong> to create a moisturising treatment focused on softness, smoothness and skin comfort.</p>
+      </div>
+    </div>
+  </div>
+
+  <svg class="manifesto-cstl" viewBox="0 0 800 240" aria-hidden="true">
+    <g class="cstl-draw" stroke="rgba(201,162,78,.7)" stroke-width="1.2" fill="none" stroke-dasharray="1" stroke-dashoffset="1">
+      <path d="M70,170 C220,50 400,40 500,120 S700,190 740,80" />
+    </g>
+    <g class="cstl-stars" fill="#E8D29F">
+      <circle cx="70"  cy="170" r="4"/>
+      <circle cx="500" cy="120" r="4"/>
+      <circle cx="740" cy="80" r="4"/>
+    </g>
+  </svg>
+</section>
+
+<!-- ========================================================= PRODOTTO -->
+<section id="prodotto" class="product">
+  <div class="container product-grid">
+    <div class="product-visual reveal">
+      <div class="product-frame">
+        <span class="badge">Anti-Age</span>
+        <img src="assets/img/thesis-body-product.jpg" alt="EMMAT Anti-Age Body Cream — the pump bottle beside its box" loading="lazy" />
+      </div>
+      <div class="product-thumbs">
+        <button type="button" class="ptn active" data-img="assets/img/thesis-body-product.jpg" data-alt="EMMAT Anti-Age Body Cream — the pump bottle beside its box" aria-label="Bottle and box"></button>
+        <button type="button" class="ptn" data-img="assets/img/thesis-body-campaign-texture.jpg" data-alt="A swatch of the body cream, the cream applied to the shoulder, and a pump dose onto the hand" aria-label="Texture and application"></button>
+        <button type="button" class="ptn" data-img="assets/img/thesis-body-campaign-bedroom.jpg" data-alt="The body cream massaged into the leg, the bottle in hand, in a sunlit bedroom" aria-label="The body cream applied to the leg"></button>
+        <button type="button" class="ptn" data-img="assets/img/thesis-body-campaign-bathroom.jpg" data-alt="The body cream applied in front of a mirror, the bottle and box on a table dressed with crochet lace" aria-label="Bottle and box by the mirror"></button>
+      </div>
+    </div>
+
+    <div class="product-copy reveal">
+      <p class="eyebrow">— the product</p>
+      <h2 class="display">EMMAT <span class="italic">Body Cream</span></h2>
+      <p class="product-tag">Anti-Age Body Cream · 200 ml</p>
+
+      <p class="product-lede">
+        A rich body cream designed to combine lasting emollient comfort with
+        ingredients commonly used in facial skincare.
+      </p>
+
+      <ul class="product-ingredients" id="ingredient-pills">
+        <li tabindex="0" data-tip="Supplies emollient lipids that soften the skin."><span>01</span> Shea Butter</li>
+        <li tabindex="0" data-tip="Selected for its established role in supporting skin barrier function."><span>02</span> Niacinamide</li>
+        <li tabindex="0" data-tip="Binds water and supports surface hydration."><span>03</span> Sodium Hyaluronate</li>
+        <li tabindex="0" data-tip="A commercial complex containing Palmitoyl Tripeptide-38."><span>04</span> Matrixyl® synthe'6</li>
+      </ul>
+
+      <dl class="product-meta">
+        <div><dt>Texture</dt><dd>Substantial, creamy oil-in-water emulsion</dd></div>
+        <div><dt>Feel</dt><dd>Nourishing and emollient</dd></div>
+        <div><dt>Use</dt><dd>Daily, on clean skin</dd></div>
+        <div><dt>Size</dt><dd>200 ml, glass bottle with pump dispenser</dd></div>
+      </dl>
+
+      <div class="product-actions">
+        <a href="#packaging" id="shop" class="cta cta-gold magnetic">Anti-Age Body Cream<span class="cta-price">€75</span></a>
+        <a href="#rituale" class="cta cta-ghost">How to use</a>
+      </div>
+
+      <ul class="trust">
+        <li>✦ Rich texture</li>
+        <li>✦ Daily body care</li>
+        <li>✦ Glass pump bottle</li>
+        <li>✦ 200 ml</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== TEXTURE -->
+<section id="texture" class="texture">
+  <div class="container texture-grid">
+    <div class="texture-copy reveal">
+      <p class="eyebrow">— texture and finish</p>
+      <h2 class="display">Substantial, <span class="italic">creamy</span></h2>
+      <p class="big">
+        A substantial, creamy oil-in-water emulsion with a more structured
+        texture than the BB cream or toner.
+      </p>
+      <p>
+        The lipid blend is designed to leave a nourishing, emollient feel
+        after application, making the product particularly appealing to those
+        who prefer richer body care.
+      </p>
+    </div>
+    <figure class="texture-visual reveal">
+      <img src="assets/img/thesis-body-campaign-texture.jpg" alt="A swatch of the body cream, the cream applied to the shoulder, and a pump dose onto the hand" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<!-- ===================================================== COMPOSIZIONE -->
+<section id="composizione" class="ingredients">
+  <div class="container">
+    <div class="reveal section-head">
+      <p class="eyebrow">— how the formula works</p>
+      <h2 class="display">Eleven roles,<br/><span class="italic">one cream</span></h2>
+      <p class="section-lede">Emollients, humectants and treatment ingredients, carried by an emulsifying and thickening system.</p>
+    </div>
+
+    <div class="ing-grid">
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">01</div>
+        <h3>Shea butter</h3>
+        <p>Supplies emollient lipids that soften the skin and contribute to the formula's rich feel.</p>
+        <em>softens</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">02</div>
+        <h3>Olive-derived emollients</h3>
+        <p>Complement the lipid blend, supporting softness and comfortable application.</p>
+        <em>comforts</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">03</div>
+        <h3>Triglycerides and Coco-Caprylate/Caprate</h3>
+        <p>Provide lubrication and spreadability, helping balance richness with ease of application.</p>
+        <em>spreads</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">04</div>
+        <h3>C13-15 Alkane</h3>
+        <p>Adds slip and a lighter sensory contribution within the richer emollient system.</p>
+        <em>slip</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">05</div>
+        <h3>Niacinamide</h3>
+        <p>Selected for its established role in supporting skin barrier function and improving the appearance of uneven skin tone.</p>
+        <em>barrier</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">06</div>
+        <h3>Sodium hyaluronate and glycerin</h3>
+        <p>Bind water and support surface hydration, helping the skin feel softer and more supple.</p>
+        <em>hydrates</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">07</div>
+        <h3>Allantoin</h3>
+        <p>Contributes soothing and skin-conditioning properties.</p>
+        <em>soothes</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">08</div>
+        <h3>Matrixyl® synthe'6</h3>
+        <p>A commercial complex containing Palmitoyl Tripeptide-38, selected for the formula's anti-ageing concept and its reported activity related to extracellular matrix components.</p>
+        <em>anti-ageing</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">09</div>
+        <h3>Tocopherol-containing antioxidant blend</h3>
+        <p>Helps protect oxidation-sensitive components of the formulation.</p>
+        <em>protects</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">10</div>
+        <h3>C14-22 Alcohols/C12-20 Alkyl Glucoside</h3>
+        <p>Provides the emulsifying system and contributes to the structured cream texture.</p>
+        <em>emulsifies</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">11</div>
+        <h3>Cetearyl Alcohol, Xanthan Gum and Hydroxyethylcellulose</h3>
+        <p>Reinforce consistency and control the product's flow.</p>
+        <em>structures</em>
+      </article>
+    </div>
+
+    <div class="why reveal">
+      <p class="eyebrow">— why these ingredients are combined</p>
+      <p class="why-text">Humectants attract water, while emollients soften the skin and help reduce moisture loss. Niacinamide, allantoin and the peptide complex add complementary treatment functions. The emulsifying and thickening system gives the formula the body needed to carry a substantial lipid phase while remaining spreadable.</p>
+    </div>
+
+    <div class="formula-strip three reveal">
+      <div><b>Humectants</b><span>attract water</span></div>
+      <div><b>Emollients</b><span>soften the skin and help reduce moisture loss</span></div>
+      <div><b>Treatment</b><span>niacinamide, allantoin and the peptide complex add complementary functions</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== RITUALE -->
+<section id="rituale" class="ritual">
+  <div class="ritual-image reveal">
+    <img src="assets/img/thesis-body-campaign-bedroom.jpg" alt="The body cream massaged into the leg, the bottle in hand, in a sunlit bedroom" loading="lazy" />
+  </div>
+  <div class="ritual-copy">
+    <div class="reveal">
+      <p class="eyebrow">— how to use</p>
+      <h2 class="display">Massaged in,<br/><span class="italic">every day</span></h2>
+
+      <ol class="steps">
+        <li>
+          <span class="step-num">i</span>
+          <h3>Massage</h3>
+          <p>Massage into clean skin until evenly distributed.</p>
+        </li>
+        <li>
+          <span class="step-num">ii</span>
+          <h3>Apply</h3>
+          <p>Apply daily, particularly to areas that feel dry or uncomfortable.</p>
+        </li>
+        <li>
+          <span class="step-num">iii</span>
+          <h3>Adjust</h3>
+          <p>Adjust the amount to suit the area being treated and your preferred level of richness.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= PACKAGING -->
+<section id="packaging" class="packaging">
+  <div class="container packaging-grid">
+    <figure class="packaging-visual reveal">
+      <img src="assets/img/uploads/20261001-230822-1.jpg" width="1600" height="460" alt="The Anti-Age Body Cream box and the 200 ml pump bottle, each shown from the front, the side and the top" loading="lazy" />
+    </figure>
+    <div class="packaging-copy reveal">
+      <p class="eyebrow">— size and packaging</p>
+      <h2 class="display">Two hundred <span class="italic">millilitres</span></h2>
+      <p class="big">200 ml. Presented in a glass bottle with a pump dispenser for convenient, controlled application.</p>
+      <div class="price-line">
+        <span class="price-label">Price</span>
+        <strong class="price">€75</strong>
+        <span class="price-size">200 ml · 6.76 fl. oz.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== GALLERIA -->
+<section id="galleria" class="gallery">
+  <div class="container">
+    <div class="reveal section-head">
+      <p class="eyebrow">— editorial</p>
+      <h2 class="display">In soft <span class="italic">light</span></h2>
+      <p class="section-lede">The bottle, the box and the gesture.</p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: bottle and box"><img src="assets/img/thesis-body-product.jpg" alt="The Anti-Age Body Cream pump bottle beside its box" loading="lazy" /></figure>
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: the body cream on the leg"><img src="assets/img/thesis-body-campaign-bedroom.jpg" alt="The body cream massaged into the leg, the bottle in hand, in a sunlit bedroom" loading="lazy" /></figure>
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: texture and application"><img src="assets/img/thesis-body-campaign-texture.jpg" alt="A swatch of the body cream, the cream applied to the shoulder, and a pump dose onto the hand" loading="lazy" /></figure>
+      <figure class="gi reveal s-full" tabindex="0" role="button" aria-label="Enlarge: packaging views"><img src="assets/img/uploads/20261001-230822-1.jpg" width="1600" height="460" alt="Anti-Age Body Cream packaging views: the box and the pump bottle from the front, side and top in two colourways, beside the styled shot of box and bottle together" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Gallery">
+  <button type="button" class="lb-close" aria-label="Close">×</button>
+  <button type="button" class="lb-prev"  aria-label="Previous">‹</button>
+  <button type="button" class="lb-next"  aria-label="Next">›</button>
+  <img alt="" />
+  <div class="lb-counter"></div>
+</div>
+
+</main>
+
+<!-- ============================================================ STICKY MOBILE CTA -->
+<a href="#prodotto" class="sticky-cta" aria-label="The product">
+  <span>Body Cream — Anti-Age</span>
+  <strong>€75 →</strong>
+</a>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark big">EMMAT</span>
+      <span class="brand-sub">BODY CREAM</span>
+      <p class="footer-tag">Rich daily care, inspired by facial skincare</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Product</h4>
+        <a href="#prodotto">Body Cream</a>
+        <a href="#texture">Texture and finish</a>
+        <a href="#packaging">Size and packaging</a>
+      </div>
+      <div>
+        <h4>Formula</h4>
+        <a href="#composizione">How it works</a>
+        <a href="#rituale">How to use</a>
+        <a href="#galleria">Gallery</a>
+      </div>
+      <div>
+        <h4>EMMAT</h4>
+        <a href="bb-cream.html">BB Cream Anti-Pollution</a>
+        <a href="milky-toner.html">Cassiopea Milky Toner</a>
+        <a href="index.html#research">The research</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© MMXXVI EMMAT · Emma Terenzi</span>
+    <span>Anti-Age Body Cream · 200 ml</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

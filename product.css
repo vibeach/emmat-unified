@@ -1,8 +1,9 @@
 /* ============================================================
    EMMAT — product launch pages (editorial Italian luxury look)
-   One stylesheet, two editions chosen by the <body> class:
+   One stylesheet, three editions chosen by the <body> class:
      .theme-toner  Cassiopea Milky Toner   (lilac / blush)
      .theme-bb     BB Cream Anti-Pollution (warm nude)
+     .theme-body   Anti-Age Body Cream     (lilac / blush)
    ============================================================ */
 
 :root {
@@ -1591,4 +1592,71 @@ button { font-family: inherit; cursor: pointer; }
   .theme-bb .gallery-grid .gi:nth-child(5) { grid-column: span 1 !important; grid-row: span 2 !important; order: 1; }
   .theme-bb .gallery-grid .gi:nth-child(4) { order: 2; }
   .theme-bb .gallery-grid .gi:nth-child(5) img { object-position: 88% 50%; }
+}
+
+
+/* ============================================================
+   BODY CREAM — additions on top of the shared EMMAT base
+   (reuses the texture / why / packaging blocks defined above)
+   ============================================================ */
+
+/* hero: the packshot is a portrait photo, so it fills the right of the frame and the copy sits on a soft veil on the left */
+.theme-body .hero-video { left: auto; right: 0; width: 56%; object-position: 85% 40%; }
+.theme-body .hero-veil {
+  background:
+    linear-gradient(90deg, rgba(250,246,238,1) 0%, rgba(var(--blush-rgb),1) 44%, rgba(var(--blush-rgb),0) 52%),
+    linear-gradient(180deg, rgba(250,246,238,.55) 0%, rgba(250,246,238,0) 22%, rgba(var(--blush-rgb),0) 70%, rgba(var(--blush-rgb),.75) 100%);
+}
+.theme-body .hero-title { font-size: clamp(50px, 7vw, 124px); }
+.theme-body .hero-actions { max-width: 460px; }
+@media (max-width: 980px) {
+  /* stacked: the photo takes the top of the hero, the copy sits below it */
+  .theme-body .hero-video { left: 0; right: auto; width: 100%; height: 58%; object-position: 50% 30%; }
+  .theme-body .hero-veil {
+    background:
+      linear-gradient(180deg, rgba(250,246,238,.6) 0%, rgba(250,246,238,0) 12%, rgba(var(--blush-rgb),0) 30%, rgba(var(--blush-rgb),.9) 50%, rgba(var(--blush-rgb),1) 58%);
+  }
+}
+@media (max-width: 760px) {
+  .theme-body .hero-title { font-size: clamp(44px, 13.4vw, 76px); }
+}
+@media (max-width: 1100px), (max-height: 820px) {
+  .theme-body .hero-scroll { display: none; }
+}
+
+/* product thumbnails */
+.ptn[data-img="assets/img/thesis-body-product.jpg"]{ background-image: url(assets/img/thesis-body-product.jpg); }
+.ptn[data-img="assets/img/thesis-body-campaign-texture.jpg"]{ background-image: url(assets/img/thesis-body-campaign-texture.jpg); }
+.ptn[data-img="assets/img/thesis-body-campaign-bedroom.jpg"]{ background-image: url(assets/img/thesis-body-campaign-bedroom.jpg); }
+.ptn[data-img="assets/img/thesis-body-campaign-bathroom.jpg"]{ background-image: url(assets/img/thesis-body-campaign-bathroom.jpg); }
+
+/* texture: the photo is a landscape triptych, show all of it */
+.theme-body .texture-visual { max-width: 640px; }
+.theme-body .texture-visual img { aspect-ratio: 3 / 2; }
+
+/* formula: eleven cards, text only; the last one closes the row */
+.theme-body .ing h3 { font-size: clamp(20px, 1.6vw, 24px); line-height: 1.15; overflow-wrap: break-word; }
+.theme-body .ing-grid .ing:last-child { grid-column: span 2; }
+@media (max-width: 560px) {
+  .theme-body .ing-grid .ing:last-child { grid-column: auto; }
+}
+
+/* size and packaging: the sheet is very wide, frame its first set of views (box and bottle: front, side, top) */
+.theme-body .packaging-visual img { aspect-ratio: 13 / 10; object-fit: cover; object-position: 0 50%; }
+
+/* gallery: the full packaging sheet runs the width of the grid */
+.gi.s-full { grid-column: span 6; grid-row: span 2; }
+
+/* nav: seven links; keep them on one line on small laptops */
+@media (max-width: 1280px) and (min-width: 981px) {
+  .theme-body .nav-links { gap: 16px; }
+  .theme-body .nav-links a { font-size: 11px; letter-spacing: .14em; white-space: nowrap; }
+  .theme-body .nav-inner { gap: 16px; }
+  .theme-body .nav-dd-btn { padding: 10px 16px; letter-spacing: .2em; }
+}
+
+@media (max-width: 980px) {
+  /* gallery in two columns: packshot + bedroom, then the texture triptych and the packaging sheet full width */
+  .gi.s-full { grid-column: span 2 !important; }
+  .theme-body .gallery-grid .gi:nth-child(3) { grid-column: span 2 !important; grid-row: span 2 !important; }
 }
