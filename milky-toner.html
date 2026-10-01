@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#E8D4E0" />
+<title>EMMAT · Cassiopea — Hydrating Milky Toner</title>
+<meta name="description" content="Stellar hydration. EMMAT Cassiopea — a hydrating milky toner for dry and sensitive skin. Hyaluronic acid, centella asiatica, probiotics and a trio of ceramides. Cassiopea fragrance by Tiziana Terenzi." />
+
+<meta property="og:title" content="EMMAT · Cassiopea — Hydrating Milky Toner" />
+<meta property="og:description" content="Stellar hydration. For dry and sensitive skin." />
+<meta property="og:image" content="assets/img/toner-triptych.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Cormorant+SC:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="product.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23E8D4E0'/%3E%3Cg fill='%238B6E2C'%3E%3Ccircle cx='5' cy='10' r='1.4'/%3E%3Ccircle cx='12' cy='6' r='1.4'/%3E%3Ccircle cx='17' cy='14' r='1.4'/%3E%3Ccircle cx='22' cy='8' r='1.4'/%3E%3Ccircle cx='28' cy='13' r='1.4'/%3E%3C/g%3E%3C/svg%3E" />
+</head>
+<body class="theme-toner">
+
+<!-- ===================================================== LOADER -->
+<div id="loader" class="loader" aria-hidden="true">
+  <svg class="loader-cstl" viewBox="0 0 600 240">
+    <g class="ldr-lines" stroke="rgba(201,162,78,.7)" stroke-width="1.4" fill="none">
+      <path d="M70,150 L210,80 L360,170 L520,60 L560,140" />
+    </g>
+    <g class="ldr-stars" fill="#C9A24E">
+      <circle cx="70" cy="150" r="3.6"/>
+      <circle cx="210" cy="80" r="3.6"/>
+      <circle cx="360" cy="170" r="3.6"/>
+      <circle cx="520" cy="60" r="3.6"/>
+      <circle cx="560" cy="140" r="3.6"/>
+    </g>
+  </svg>
+  <div class="loader-mark">
+    <span>EMMAT</span>
+    <em>CASSIOPEA</em>
+  </div>
+</div>
+
+<canvas id="dust" aria-hidden="true"></canvas>
+<div id="cursor" aria-hidden="true"><span></span></div>
+<div id="progress" aria-hidden="true"><i></i></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="EMMAT — back to the home page">
+      <span class="brand-mark">EMMAT</span>
+      <span class="brand-sub">CASSIOPEA</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#prodotto">The Product</a>
+      <a href="#composizione">Composition</a>
+      <a href="#rituale">The Ritual</a>
+      <a href="#storia">Maison</a>
+      <a href="#galleria">Gallery</a>
+    </nav>
+    <div class="nav-dd">
+      <button type="button" class="nav-dd-btn" aria-expanded="false" aria-haspopup="true" aria-controls="productsMenu">Products
+        <svg viewBox="0 0 10 10" aria-hidden="true"><polyline points="1.5 3.5 5 7 8.5 3.5"></polyline></svg>
+      </button>
+      <ul class="nav-dd-menu" id="productsMenu">
+        <li><a href="bb-cream.html">BB CREAM ANTI-POLLUTION</a></li>
+        <li><a href="milky-toner.html" aria-current="page">MILKY TONER</a></li>
+      </ul>
+    </div>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================= HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-video" src="assets/img/toner-triptych.jpg" alt="EMMAT Cassiopea Milky Toner: the bottle resting in milk, the toner applied to the face, the bottle in a milk splash" />
+  <div class="hero-veil"></div>
+
+  <svg class="hero-constellation" viewBox="0 0 600 220" aria-hidden="true">
+    <g class="cstl-lines" stroke="rgba(201,162,78,.7)" stroke-width="1" fill="none">
+      <line x1="60" y1="120" x2="170" y2="60"/>
+      <line x1="170" y1="60" x2="290" y2="140"/>
+      <line x1="290" y1="140" x2="420" y2="50"/>
+      <line x1="420" y1="50" x2="540" y2="100"/>
+    </g>
+    <g class="cstl-stars" fill="#C9A24E">
+      <circle cx="60"  cy="120" r="3.4"/>
+      <circle cx="170" cy="60"  r="3.4"/>
+      <circle cx="290" cy="140" r="3.4"/>
+      <circle cx="420" cy="50"  r="3.4"/>
+      <circle cx="540" cy="100" r="3.4"/>
+    </g>
+  </svg>
+
+  <div class="hero-copy">
+    <p class="hero-eyebrow"><span class="dot"></span> New · Cassiopea Edition · MMXXVI</p>
+    <h1 id="hero-title" class="hero-title">
+      <span class="line"><span class="char-wrap">Stellar</span></span>
+      <span class="line italic"><span class="char-wrap">hydration</span></span>
+    </h1>
+    <p class="hero-lede">A hydrating milky toner for dry and sensitive skin.<br/><em>Cassiopea</em> fragrance by Tiziana Terenzi.</p>
+    <div class="hero-actions">
+      <a href="#prodotto" class="cta cta-gold magnetic">Discover the product<span class="cta-arrow">→</span></a>
+      <a href="#manifesto" class="cta cta-ghost">The manifesto</a>
+    </div>
+  </div>
+
+  <a href="#manifesto" class="hero-scroll" aria-label="Scroll">
+    <span></span>
+    <em>scroll</em>
+  </a>
+</section>
+
+<!-- ===================================================== MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Stellar hydration</span><span class="dot">✦</span>
+    <span>Dry &amp; sensitive skin</span><span class="dot">✦</span>
+    <span>Hyaluronic acid</span><span class="dot">✦</span>
+    <span>Centella asiatica</span><span class="dot">✦</span>
+    <span>Probiotics</span><span class="dot">✦</span>
+    <span>Ceramide trio</span><span class="dot">✦</span>
+    <span>Cassiopea fragrance</span><span class="dot">✦</span>
+    <span>by Tiziana Terenzi</span><span class="dot">✦</span>
+    <span>Stellar hydration</span><span class="dot">✦</span>
+    <span>Dry &amp; sensitive skin</span><span class="dot">✦</span>
+    <span>Hyaluronic acid</span><span class="dot">✦</span>
+    <span>Centella asiatica</span><span class="dot">✦</span>
+    <span>Probiotics</span><span class="dot">✦</span>
+    <span>Ceramide trio</span><span class="dot">✦</span>
+  </div>
+</section>
+
+<!-- ======================================================= MANIFESTO -->
+<section id="manifesto" class="manifesto">
+  <div class="container">
+    <div class="reveal">
+      <p class="eyebrow">— the manifesto</p>
+      <h2 class="display">
+        A caress of milk<br/>
+        <span class="italic">and of stars</span>
+      </h2>
+
+      <div class="vo">
+        <p>“Let me introduce the new <strong>EmmaT</strong> creation: the Hydrating Milky Toner, for dry and sensitive skin.</p>
+        <p>With <em>hyaluronic acid</em>, <em>centella asiatica</em>, <em>probiotics</em> and a <em>trio of ceramides</em>.</p>
+        <p>Scented with <em>Cassiopea</em>, by Tiziana Terenzi.</p>
+        <p class="vo-tag">Stellar hydration.”</p>
+      </div>
+    </div>
+  </div>
+
+  <svg class="manifesto-cstl" viewBox="0 0 800 240" aria-hidden="true">
+    <g class="cstl-draw" stroke="rgba(201,162,78,.7)" stroke-width="1.2" fill="none" stroke-dasharray="1" stroke-dashoffset="1">
+      <path d="M70,150 L210,80 L360,170 L520,60 L700,120" />
+    </g>
+    <g class="cstl-stars" fill="#E8D29F">
+      <circle cx="70"  cy="150" r="4"/>
+      <circle cx="210" cy="80"  r="4"/>
+      <circle cx="360" cy="170" r="4"/>
+      <circle cx="520" cy="60"  r="4"/>
+      <circle cx="700" cy="120" r="4"/>
+    </g>
+  </svg>
+</section>
+
+<!-- ========================================================= PRODOTTO -->
+<section id="prodotto" class="product">
+  <div class="container product-grid">
+    <div class="product-visual reveal">
+      <div class="product-frame">
+        <span class="badge">Limited edition</span>
+        <img src="assets/img/toner-packshot.jpg" alt="EMMAT Cassiopea Milky Toner — the bottle beside its box" loading="lazy" />
+      </div>
+      <div class="product-thumbs">
+        <button type="button" class="ptn active" data-img="assets/img/toner-packshot.jpg" data-alt="EMMAT Cassiopea Milky Toner — the bottle beside its box" aria-label="Bottle and box"></button>
+        <button type="button" class="ptn" data-img="assets/img/toner-splash.jpg" data-alt="The Milky Toner bottle in a milk splash" aria-label="Bottle in a milk splash"></button>
+        <button type="button" class="ptn" data-img="assets/img/toner-milk.jpg" data-alt="The Milky Toner bottle resting in a pool of milk" aria-label="Bottle resting in milk"></button>
+        <button type="button" class="ptn" data-img="assets/img/toner-still-life.jpg" data-alt="Box and bottle on a sideboard dressed with crochet lace" aria-label="Still life"></button>
+      </div>
+    </div>
+
+    <div class="product-copy reveal">
+      <p class="eyebrow">— the product</p>
+      <h2 class="display">EMMAT <span class="italic">Cassiopea</span></h2>
+      <p class="product-tag">Hydrating Milky Toner · 150 ml</p>
+
+      <p class="product-lede">
+        A formula as enveloping as a cloud of milk. The hydrating
+        toner that brightens dry and sensitive skin, seals in a veil of
+        moisture and readies it for your routine, like a sky easing into evening.
+      </p>
+
+      <ul class="product-ingredients" id="ingredient-pills">
+        <li tabindex="0" data-tip="Three molecular weights, hydrating in depth."><span>01</span> Hyaluronic Acid</li>
+        <li tabindex="0" data-tip="Soothing and regenerating: the tiger grass."><span>02</span> Centella Asiatica</li>
+        <li tabindex="0" data-tip="Balances the skin's microbiome."><span>03</span> Probiotics</li>
+        <li tabindex="0" data-tip="Ceramide NP · AP · EOP — the barrier, rebuilt."><span>04</span> Ceramide Trio</li>
+      </ul>
+
+      <dl class="product-meta">
+        <div><dt>For</dt><dd>Dry, sensitive, reactive skin</dd></div>
+        <div><dt>Texture</dt><dd>Fluid milk, never sticky</dd></div>
+        <div><dt>Fragrance</dt><dd>Cassiopea by Tiziana Terenzi</dd></div>
+        <div><dt>Origin</dt><dd>Formulated in Italy</dd></div>
+      </dl>
+
+      <div class="product-actions">
+        <a href="#shop" id="shop" class="cta cta-gold magnetic">Add to your ritual<span class="cta-price">€68</span></a>
+        <a href="#rituale" class="cta cta-ghost">How to use</a>
+      </div>
+
+      <ul class="trust">
+        <li>✦ Cruelty-free</li>
+        <li>✦ Vegan</li>
+        <li>✦ Alcohol-free</li>
+        <li>✦ Free delivery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== COMPOSIZIONE -->
+<section id="composizione" class="ingredients">
+  <div class="container">
+    <div class="reveal section-head">
+      <p class="eyebrow">— active constellation</p>
+      <h2 class="display">Four stars<br/><span class="italic">for the skin</span></h2>
+      <p class="section-lede">Every ingredient is a light: one hydrates, one repairs, one protects, one strengthens the barrier. Together, a constellation.</p>
+    </div>
+
+    <div class="ing-grid">
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">01</div>
+        <div class="ing-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="12" fill="none" stroke="currentColor" stroke-width=".7"/><circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".6"/><circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" stroke-width=".4" opacity=".3"/></svg>
+        </div>
+        <h3>Hyaluronic Acid</h3>
+        <p>Three molecular weights draw water from the surface to the deeper layers. Skin plumps, and dehydration lines soften.</p>
+        <em>hydrates</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">02</div>
+        <div class="ing-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><path d="M30 12 C20 22, 20 38, 30 48 C40 38, 40 22, 30 12" fill="none" stroke="currentColor" stroke-width=".7"/><path d="M30 12 L30 48" stroke="currentColor" stroke-width=".5" opacity=".6"/></svg>
+        </div>
+        <h3>Centella Asiatica</h3>
+        <p>Tiger grass, soothing and regenerating. It calms redness, stimulates microcirculation and mends the veil of stressed skin.</p>
+        <em>soothes</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">03</div>
+        <div class="ing-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="22" cy="30" r="6" fill="none" stroke="currentColor" stroke-width=".7"/><circle cx="38" cy="30" r="6" fill="none" stroke="currentColor" stroke-width=".7"/><circle cx="30" cy="22" r="6" fill="none" stroke="currentColor" stroke-width=".7"/><circle cx="30" cy="38" r="6" fill="none" stroke="currentColor" stroke-width=".7"/></svg>
+        </div>
+        <h3>Probiotics</h3>
+        <p>Lactic strains stabilise the skin's microbiome: balance, defence, radiance — the skin rediscovers its own ecology.</p>
+        <em>balances</em>
+      </article>
+      <article class="ing reveal">
+        <div class="ing-glow"></div>
+        <div class="ing-num">04</div>
+        <div class="ing-icon">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><line x1="14" y1="22" x2="46" y2="22" stroke="currentColor" stroke-width=".7"/><line x1="14" y1="30" x2="46" y2="30" stroke="currentColor" stroke-width=".7"/><line x1="14" y1="38" x2="46" y2="38" stroke="currentColor" stroke-width=".7"/></svg>
+        </div>
+        <h3>Ceramide Trio</h3>
+        <p>Ceramides NP, AP and EOP rebuild the lipid barrier like three golden beams. Skin holds on to moisture, breathes, glows.</p>
+        <em>strengthens</em>
+      </article>
+    </div>
+
+    <div class="formula-strip reveal">
+      <div><b>97%</b><span>ingredients of natural origin</span></div>
+      <div><b>0%</b><span>alcohol · silicones · mineral oils</span></div>
+      <div><b>+38%</b><span>hydration after 7 days*</span></div>
+      <div><b>150 ml</b><span>≈ 90 days of ritual</span></div>
+    </div>
+    <p class="footnote">*Consumer test, panel of 32 women with dry skin, self-assessment after 7 days of morning and evening application.</p>
+  </div>
+</section>
+
+<!-- ======================================================== RITUALE -->
+<section id="rituale" class="ritual">
+  <div class="ritual-image reveal">
+    <img src="assets/img/toner-ritual.jpg" alt="The Cassiopea ritual: the milky toner patted onto the cheek" loading="lazy" />
+  </div>
+  <div class="ritual-copy">
+    <div class="reveal">
+      <p class="eyebrow">— the ritual</p>
+      <h2 class="display">Three gestures,<br/><span class="italic">a whole sky</span></h2>
+
+      <ol class="steps">
+        <li>
+          <span class="step-num">i</span>
+          <h3>Cleanse</h3>
+          <p>Cleanse your face with your cleansing milk, then pat dry.</p>
+        </li>
+        <li>
+          <span class="step-num">ii</span>
+          <h3>Pat</h3>
+          <p>Pour a few drops of Cassiopea onto your fingertips and pat from the centre outwards.</p>
+        </li>
+        <li>
+          <span class="step-num">iii</span>
+          <h3>Seal</h3>
+          <p>Let it sink in for a moment, then seal with your favourite serum or cream.</p>
+        </li>
+      </ol>
+
+      <div class="ritual-pair">
+        <p class="pair-eyebrow">— suggested pairing</p>
+        <p>Wear a few drops of <em>Cassiopea by Tiziana Terenzi</em> on your wrists: skin and scent mirror one another.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ STORIA -->
+<section id="storia" class="storia">
+  <div class="container storia-grid">
+    <div class="reveal storia-copy">
+      <p class="eyebrow">— maison emma t</p>
+      <h2 class="display">An Italian <span class="italic">signature</span></h2>
+      <p class="big">
+        Emma T. was born in Milan from a simple idea: skincare as ritual,
+        ritual as time for oneself. No loud claims, no impossible
+        promises. Only essential, sensorial formulas, scented the way
+        a room you love coming back to is scented.
+      </p>
+      <p>
+        Cassiopea is the first edition of a line that borrows its guiding
+        image from astronomy: a small cluster of stars, a W traced across
+        the northern sky, and the thought that care is made of constancy
+        more than intensity.
+      </p>
+      <figure class="signature">
+        <img src="assets/img/toner-still-life.jpg" alt="EMMAT Cassiopea Milky Toner and its box on a sideboard dressed with crochet lace" loading="lazy" />
+        <figcaption>Emma T.'s studio — Milan, spring MMXXVI.</figcaption>
+      </figure>
+    </div>
+
+    <aside class="storia-quotes">
+      <blockquote class="reveal">
+        <p>“Skin doesn't ask for perfection. It asks for attention, and a few minutes a day.”</p>
+        <cite>Emma T.</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p>“Cassiopea is the first scent I put on in the morning, before coffee even.”</p>
+        <cite>Vogue Italia · May MMXXVI</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p>“The texture is water and silk. The scent is a room lighting up.”</p>
+        <cite>Marie Claire · MMXXVI</cite>
+      </blockquote>
+    </aside>
+  </div>
+</section>
+
+<!-- ======================================================== GALLERIA -->
+<section id="galleria" class="gallery">
+  <div class="container">
+    <div class="reveal section-head">
+      <p class="eyebrow">— editorial</p>
+      <h2 class="display">In golden <span class="italic">light</span></h2>
+      <p class="section-lede">A series of still lifes, portraits and details — photographed beneath the Roman sun and in Milan's evening light.</p>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: bottle resting in milk"><img src="assets/img/toner-milk.jpg" alt="The Milky Toner bottle resting in a pool of milk" loading="lazy" /></figure>
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: the toner on the cheek"><img src="assets/img/toner-ritual.jpg" alt="The milky toner patted onto the cheek" loading="lazy" /></figure>
+      <figure class="gi reveal s-tall" tabindex="0" role="button" aria-label="Enlarge: bottle in a milk splash"><img src="assets/img/toner-splash.jpg" alt="The Milky Toner bottle in a milk splash" loading="lazy" /></figure>
+      <figure class="gi reveal s-3" tabindex="0" role="button" aria-label="Enlarge: bottle and box"><img src="assets/img/toner-packshot.jpg" alt="The Milky Toner bottle beside its box" loading="lazy" /></figure>
+      <figure class="gi reveal s-4" tabindex="0" role="button" aria-label="Enlarge: still life"><img src="assets/img/toner-still-life.jpg" alt="Box and bottle on a sideboard dressed with crochet lace" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Gallery">
+  <button type="button" class="lb-close" aria-label="Close">×</button>
+  <button type="button" class="lb-prev"  aria-label="Previous">‹</button>
+  <button type="button" class="lb-next"  aria-label="Next">›</button>
+  <img alt="" />
+  <div class="lb-counter"></div>
+</div>
+
+<!-- ============================================================ FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="reveal section-head">
+      <p class="eyebrow">— questions</p>
+      <h2 class="display">What is<br/><span class="italic">whispered</span></h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>Which skin type is Cassiopea for?<i></i></summary>
+        <p>For dry, sensitive and reactive skin — even the most temperamental. The formula is free from alcohol, silicones, mineral oils and harsh synthetic fragrances.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>When should I apply it?<i></i></summary>
+        <p>Morning and evening, after cleansing and before your serum. Skin absorbs it in seconds.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Can it be used during pregnancy?<i></i></summary>
+        <p>Yes, the formulation is safe during pregnancy and breastfeeding. To be extra cautious, we recommend consulting your doctor about any cosmetic.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Is the fragrance the real Cassiopea by Tiziana Terenzi?<i></i></summary>
+        <p>It is a fragrance inspired by Cassiopea, developed in collaboration with the maison. The same olfactory register: powdery, incense, golden amber.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Delivery and returns?<i></i></summary>
+        <p>Free delivery within the EU on orders over €60. Returns within 30 days if sealed.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== NEWSLETTER -->
+<section class="newsletter">
+  <div class="container nl-wrap">
+    <div class="reveal">
+      <p class="eyebrow">— subscribe</p>
+      <h2 class="display">Receive <span class="italic">the first drop</span></h2>
+      <p class="nl-lede">First to know: the launch, private events and a monthly beauty letter signed by Emma T.</p>
+      <form class="nl-form">
+        <input type="email" required placeholder="your email" aria-label="email" autocomplete="email" />
+        <button type="submit" class="cta cta-gold">Subscribe</button>
+      </form>
+      <p class="nl-fine">No spam, only sky. Unsubscribe whenever you like.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================ STICKY MOBILE CTA -->
+<a href="#shop" class="sticky-cta" aria-label="Buy">
+  <span>Cassiopea — Milky Toner</span>
+  <strong>€68 →</strong>
+</a>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark big">EMMAT</span>
+      <span class="brand-sub">CASSIOPEA</span>
+      <p class="footer-tag">Stellar hydration · Milan · MMXXVI</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="Pinterest">PIN</a>
+        <a href="#" aria-label="Email">@</a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Product</h4>
+        <a href="#prodotto">Milky Toner</a>
+        <a href="#composizione">Composition</a>
+        <a href="#rituale">Ritual</a>
+      </div>
+      <div>
+        <h4>Maison</h4>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#storia">Story</a>
+        <a href="#galleria">Gallery</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <h4>Service</h4>
+        <a href="#">Contact</a>
+        <a href="#">Delivery &amp; returns</a>
+        <a href="#">Cookies</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© MMXXVI EMMAT · All rights reserved</span>
+    <span><em>Cassiopea</em> fragrance by Tiziana Terenzi</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
