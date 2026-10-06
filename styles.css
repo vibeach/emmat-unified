@@ -1041,11 +1041,6 @@ canvas { max-width: 100%; }
   letter-spacing: -0.006em;
 }
 
-.story-details { margin-top: 64px; }
-.story-body {
-  max-width: 760px;
-  padding-top: 24px;
-}
 .story-body p { margin-bottom: 20px; }
 .story-body .section-lede {
   font-size: var(--step-1);
@@ -1173,7 +1168,6 @@ canvas { max-width: 100%; }
 
   .grid-2, .grid-3, .conclusions { grid-template-columns: 1fr; gap: 32px; }
   .about-grid { gap: 40px; }
-  .story-details { margin-top: 40px; }
   .stat-strip { grid-template-columns: 1fr 1fr; }
   .stat { padding: 32px 16px; min-height: 144px; }
   .stat-num { font-size: 64px; }
@@ -1588,6 +1582,18 @@ canvas { max-width: 100%; }
 .nav-dd-menu a:hover,
 .nav-dd-menu a:focus-visible { background: var(--rose); }
 
+/* "My Story" dropdown — same button and panel, holding text instead of links */
+.nav-dd-panel {
+  width: min(560px, calc(100vw - 40px));
+  max-height: min(70vh, 620px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 28px 30px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.nav-dd-panel:focus-visible { outline: 2px solid var(--deep); outline-offset: 3px; }
+
 .subnav a:focus-visible,
 .nav-dd-btn:focus-visible {
   outline: 2px solid var(--deep);
@@ -1843,6 +1849,7 @@ canvas { max-width: 100%; }
   .nav-dd { position: static; }
   .nav-dd::after { display: none; }
   .nav-dd-menu { top: calc(100% + 6px); left: 20px; right: 20px; min-width: 0; }
+  .nav-dd-panel { width: auto; padding: 22px 20px; }
   .pp-section { padding: 50px 20px; }
   .pp-section h2 { font-size: 28px; }
   .form-table, .results-table { font-size: 13.5px; }
