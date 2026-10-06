@@ -1660,3 +1660,34 @@ button { font-family: inherit; cursor: pointer; }
   .gi.s-full { grid-column: span 2 !important; }
   .theme-body .gallery-grid .gi:nth-child(3) { grid-column: span 2 !important; grid-row: span 2 !important; }
 }
+
+
+/* ============================================================
+   MY STORY — additions on top of the shared EMMAT base
+   (reuses the storia text block defined above)
+   ============================================================ */
+
+/* the photo opens the page, full width, under the transparent nav */
+.story-photo { margin: 0; background: var(--ivory); }
+.story-photo img { width: 100%; height: auto; }
+@media (max-width: 760px) {
+  /* on phones the photo is short: start it below the nav so the bar never covers the face */
+  .story-photo { padding-top: 76px; }
+}
+
+/* one reading column */
+.story-copy { max-width: 760px; margin: 0 auto; }
+.story-copy h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(26px, 2.6vw, 36px);
+  line-height: 1.15;
+  color: var(--gold-deep);
+  margin: 1.8em 0 .6em;
+  scroll-margin-top: 100px;
+}
+
+/* no sticky CTA on this page */
+@media (max-width: 760px) {
+  .theme-story .footer { padding-bottom: 32px; }
+}
