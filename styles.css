@@ -1139,6 +1139,25 @@ canvas { max-width: 100%; }
   line-height: 1.65;
 }
 .footer-line.muted { color: rgba(237, 219, 206, .7); margin-top: 12px; font-size: 12px; font-style: italic; }
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 32px;
+  margin-top: 32px;
+  font-size: 13px;
+  color: rgba(237, 219, 206, .85);
+}
+.footer-contacts a { color: var(--rose); border-bottom: 1px solid rgba(237, 219, 206, .35); transition: border-color .2s; }
+.footer-contacts a:hover { border-color: var(--rose); }
+.footer-contacts .fc-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: rgba(237, 219, 206, .6);
+  margin-bottom: 4px;
+}
 
 /* ═══════════════════════════════════════════════ RESPONSIVE */
 @media (max-width: 1000px) {
